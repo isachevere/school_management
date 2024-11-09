@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #1e88e5;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    color: #757575;
+}
+
+/* Flex Container for Navigation */
+.vertical-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vertical-nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.vertical-nav li {
+    flex: 1 1 50%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    color: #1e88e5;
+    font-weight: bold;
+    font-size: 1.4em; /* Increased font size */
+    padding: 20px; /* Increased padding for larger button size */
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 250px; /* Increased width for larger button appearance */
+}
+
+.vertical-nav a img {
+    width: 150px;
+    height: 150px;
+}
+
+.vertical-nav a:hover {
+    background-color: #1e88e5;
+    color: #ffffff;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #1e88e5;
+    color: #ffffff;
+}
+
+td {
+    background-color: #e3f2fd;
+}
+
+tr:nth-child(even) td {
+    background-color: #bbdefb;
+}
+
+/* Hover Effect */
+tr:hover td {
+    background-color: #90caf9;
+}
+
+/* Form Styling */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    border-radius: 6px; /* Increased border-radius for a rounded look */
+    display: block;
+    margin: 20px auto; /* Centered alignment */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+/* Go Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 30px; /* Spacing above */
+}
+
+.back-button-container button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Larger padding for bigger button */
+    font-size: 18px; /* Larger font size */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-button-container button:hover {
+    background-color: #1565c0;
+}
